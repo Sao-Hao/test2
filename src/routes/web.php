@@ -14,10 +14,12 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/product', [ProductController::class, 'index']);
-Route::get('/products/{productId}', [ProductController::class, 'index']);
-Route::get('/products/{productId}/update', [ProductController::class, 'index']);
-Route::get('/products/register', [ProductController::class, 'index']);
-Route::get('/products/search', [ProductController::class, 'index']);
-Route::get('/products/{productId}/delete', [ProductController::class, 'index']);
-Route::post('/product/upload', [ProductController::class, 'upload']);
+//Route::get('/products/{productId}', [ProductController::class, 'index']);
+Route::get('/products/{productId}/update', [ProductController::class, 'edit']);
+Route::post('/products/{productId}/update', [ProductController::class, 'update']);
+
+//Route::get('/products/register', [ProductController::class, 'index']);
+//Route::get('/products/search', [ProductController::class, 'index']);
+//Route::get('/products/{productId}/delete', [ProductController::class, 'index']);
+//Route::post('/product/upload', [ProductController::class, 'upload']);
 
