@@ -1,7 +1,7 @@
 @extends('layouts.default')
 <style>
     th {
-        background-color: #289ADC;
+        background-color:rgb(255, 171, 14);
         color: white;
         padding: 5px 40px;
     }
@@ -10,12 +10,12 @@
     }
     td {
         padding: 25px 40px;
-        background-color: #EEEEEE;
+        background-color:rgb(244, 210, 154);
         text-align: center;
     }
     button {
         padding: 10px 20px;
-        background-color: #289ADC;
+        background-color:rgb(255, 79, 3);
         border: none;
         color: white;
     }

@@ -13,7 +13,7 @@
         h1 {
             font-size:60px;
             color:white;
-            text-shadow:1px 0 5px #289ADC;
+            text-shadow:1px 0 5px rgb(228, 225, 43);
             letter-spacing:-4px;
             margin-left: 10px;
         }

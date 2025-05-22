@@ -1,7 +1,7 @@
 @extends('layouts.default')
 <style>
     th {
-        background-color:rgb(222, 58, 116);
+        background-color:rgb(255, 171, 14);
         color: white;
         padding: 5px 40px;
     }
@@ -10,7 +10,7 @@
     }
     td {
         padding: 25px 40px;
-        background-color: #EEEEEE;
+        background-color:rgb(244, 210, 154);
         text-align: center;
     }
 </style>
@@ -29,7 +29,7 @@
         <td>{{$product->name}}</td>
         <td>¥{{$product->price}}</td>
         <td>{{$product->description}}</td>
-        <td><img src="{{ asset('fruits-img/'.$product->image) }}" alt="{{ $product->name }}" style="width:100px;"></td>
+        <td><img src="{{ asset('fruits-img/'.$product->image) }}" alt="{{ $product->name }}" style="width:150px;"></td>
     </tr>
     @endforeach
 </table>
