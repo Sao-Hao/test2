@@ -23,29 +23,44 @@
 @section('title', 'edit.blade.php')
 
 @section('content')
+@if (count($errors) > 0)
+<p>入力に問題があります</p>
+@endif
 <form action="/products/{{ $form->id }}/update" method="POST">
     <table>
         @csrf
+        @if ($errors->has('name'))
         <tr>
-            <th>
-                name
-            </th>
+            <th styld="background-color: red">ERROR</th>
+            <td>{{$errors->first('name')}}</td>
+        </tr>
+        @endif
+        <tr>
+            <th>name</th>
             <td>
                 <input type="text" name="name" value="{{$form->name}}">
             </td>
         </tr>
+        @if ($errors->has('price'))
         <tr>
-            <th>
-                price
-            </th>
+            <th styld="background-color: red">ERROR</th>
+            <td>{{$errors->first('price')}}</td>
+        </tr>
+        @endif
+        <tr>
+            <th>price</th>
             <td>
                 <input type="text" name="price" value="{{$form->price}}">
             </td>
         </tr>
+        @if ($errors->has('description'))
         <tr>
-            <th>
-                description
-            </th>
+            <th styld="background-color: red">ERROR</th>
+            <td>{{$errors->first('description')}}</td>
+        </tr>
+        @endif
+        <tr>
+            <th>description</th>
             <td>
                 <input type="text" name="description" value="{{$form->description}}">
             </td>

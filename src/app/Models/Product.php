@@ -13,7 +13,11 @@ class Product extends Model
         'name',
         'price',
         'description',
-        'season',
-        'image',
+        'image'
     ];
+
+    public function seasons()
+    {
+        return $this->belongsToMany(Season::class);
+    }
 }

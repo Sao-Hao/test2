@@ -4,7 +4,7 @@
 
 ### Dockerビルド
 
-1. git clone git@github.com:Sao-Hao/test2.git
+1. git clone `git@github.com:Sao-Hao/test2.git`
 2. Docker Desktop アプリを立ち上げる
 3. docker-compose up -d --build
 
